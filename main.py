@@ -2,7 +2,9 @@ import os
 
 d = {}
 def a():
-    pass
+    path_to_directory = str(input())
+    b(path_to_directory)
+    c(d)
 
 def b():
     pass
