@@ -7,7 +7,12 @@ def a():
     c(d)
 
 def b():
-    pass
+    global d
+    for filename in os.listdir(path):
+        path_to_file = path + '\\' + filename
+        d[path_to_file] = os.path.getsize(path_to_file)
+        if os.path.isdir(path_to_file):
+            b(path_to_file)
 
 def c():
     pass
